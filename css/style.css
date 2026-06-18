@@ -273,15 +273,39 @@ img { max-width: 100%; display: block; }
 /* --- Hero Section --- */
 .hero {
   min-height: calc(100vh - var(--nav-height));
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  text-align: left;
   padding: 40px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 600px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  box-shadow: 0 0 60px rgba(0, 212, 255, 0.25), 0 20px 40px rgba(0, 0, 0, 0.4);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
 }
 
 .hero-badge {
@@ -412,6 +436,36 @@ img { max-width: 100%; display: block; }
   font-size: 0.85rem;
   color: var(--text-dim);
   margin-top: 4px;
+}
+
+/* --- Hero Image / Profile Photo --- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  box-shadow: 0 0 60px rgba(0, 212, 255, 0.25), 0 20px 40px rgba(0, 0, 0, 0.4);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
 }
 
 /* --- Cards --- */
@@ -1120,6 +1174,10 @@ img { max-width: 100%; display: block; }
   .hero h1 { font-size: 2.8rem; }
   .hero h1 .line2 { font-size: 1.8rem; }
   .stats-bar { gap: 30px; }
+  .hero { grid-template-columns: 1fr 1fr; text-align: left; }
+  .hero-content { text-align: left; }
+  .hero-actions { justify-content: flex-start; }
+  .hero-image { order: -1; }
 }
 
 /* Mobile: <= 768px */
@@ -1163,6 +1221,12 @@ img { max-width: 100%; display: block; }
   .cert-grid { grid-template-columns: 1fr; }
 
   .about-image-box { max-width: 300px; margin: 0 auto; }
+
+  .hero { grid-template-columns: 1fr; text-align: center; }
+  .hero-content { text-align: center; }
+  .hero-actions { justify-content: center; }
+  .hero-image { order: 1; }
+  .profile-img { width: 240px; height: 240px; }
 }
 
 /* Small Mobile: <= 480px */
