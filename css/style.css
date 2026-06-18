@@ -276,7 +276,7 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  align-items: center;
+  align-items: start;
   text-align: left;
   padding: 40px 24px;
   max-width: 1200px;
@@ -290,8 +290,8 @@ img { max-width: 100%; display: block; }
 .hero-image {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: -60px;
+  align-items: flex-start;
+  padding-top: 60px;
 }
 
 .profile-img {
