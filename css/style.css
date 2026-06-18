@@ -1177,7 +1177,7 @@ img { max-width: 100%; display: block; }
   .hero { grid-template-columns: 1fr 1fr; text-align: left; }
   .hero-content { text-align: left; }
   .hero-actions { justify-content: flex-start; }
-  .hero-image { order: -1; }
+  .hero-image { order: 1; }
 }
 
 /* Mobile: <= 768px */
