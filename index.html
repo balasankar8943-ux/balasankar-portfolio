@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Balasankar S - Second Year Engineering Student, Founder of Yantrixa.in, Full Stack Developer & Robotics Enthusiast">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <title>Balasankar S | Engineer & Developer</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Engineering Grid Background -->
+  <div class="eng-grid-bg"></div>
+
+  <!-- Three.js Canvas -->
+  <canvas id="three-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#home" class="nav-logo">
+      <div class="logo-icon">BS</div>
+      <span>BALASANKAR</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+
+    <!-- ==================== HOME PAGE ==================== -->
+    <section id="home" class="page active">
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Open to opportunities
+          </div>
+          <h1>
+            Hi, I'm <span class="gradient-text">Balasankar S</span>
+            <span class="line2">A <span class="typing-text"></span><span style="color:var(--primary)">|</span></span>
+          </h1>
+          <p>
+            Second year engineering student, founder of Yantrixa.in, passionate about full stack development and robotics. Building innovative solutions with code and creativity.
+          </p>
+          <div class="hero-actions">
+            <a href="#experience" class="btn btn-primary" onclick="navigateTo('experience')">
+              View My Work
+            </a>
+            <a href="#contact" class="btn btn-outline" onclick="navigateTo('contact')">
+              Get In Touch
+            </a>
+          </div>
+          <div class="stats-bar">
+            <div class="stat-item">
+              <div class="stat-number" data-target="3">0</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="2">0</div>
+              <div class="stat-label">Internships</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="4">0</div>
+              <div class="stat-label">Certificates</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="10">0</div>
+              <div class="stat-label">Tech Skills</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT PAGE ==================== -->
+    <section id="about" class="page">
+      <div class="section">
+        <div class="section-header">
+          <span class="section-label">// About Me</span>
+          <h2 class="section-title">Engineering My Future</h2>
+          <p class="section-subtitle">Passionate about technology, leadership, and innovation</p>
+        </div>
+
+        <div class="about-hero">
+          <div class="about-image-wrap reveal">
+            <div class="about-image-box">
+              <img src="assets/yantrixa-logo.svg" alt="Yantrixa Logo" class="yantrixa-logo">
+            </div>
+          </div>
+
+          <div class="about-text reveal">
+            <h2>I'm <span>Balasankar S</span>, a Second Year ECE Student at SBCE</h2>
+            <p>
+              I'm currently in my second year of engineering, having completed my first year with a strong foundation in programming and problem-solving. I am the founder of <strong style="color:var(--primary)">Yantrixa.in</strong>, a technology initiative where I lead a team to build innovative projects.
+            </p>
+            <p>
+              My journey in tech spans across full stack development and robotics. I've completed internships at <strong style="color:var(--primary)">Nuke Lab</strong> (Robotics R&D) as a Junior Executive and at <strong style="color:var(--primary)">Codalpha</strong> as a Full Stack Developer Intern.
+            </p>
+            <p>
+              I believe in the power of technology to transform ideas into reality, and I'm committed to continuous learning and leadership.
+            </p>
+
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="info-icon">🎓</span>
+                <div>
+                  <div class="info-label">Education</div>
+                  <div class="info-value">S2 ECE, SBCE</div>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">🏢</span>
+                <div>
+                  <div class="info-label">Founder</div>
+                  <div class="info-value">Yantrixa.in</div>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                  <div class="info-label">Location</div>
+                  <div class="info-value">India</div>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">📧</span>
+                <div>
+                  <div class="info-label">Email</div>
+                  <div class="info-value">balasankar8943@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS PAGE ==================== -->
+    <section id="skills" class="page">
+      <div class="section">
+        <div class="section-header">
+          <span class="section-label">// Skills</span>
+          <h2 class="section-title">Technical Arsenal</h2>
+          <p class="section-subtitle">Technologies and tools I work with</p>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3>Programming Languages</h3>
+          <div class="grid-3 reveal-stagger">
+            <div class="skill-card card">
+              <div class="skill-icon">🐍</div>
+              <h4>Python</h4>
+              <p>Scripting, automation, data analysis</p>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-card card">
+              <div class="skill-icon">⚡</div>
+              <h4>Java</h4>
+              <p>OOP, Android, backend systems</p>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="75%"></div>
+              </div>
+            </div>
+            <div class="skill-card card">
+              <div class="skill-icon">⚙️</div>
+              <h4>C++</h4>
+              <p>DSA, competitive programming, systems</p>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3>Web Development</h3>
+          <div class="grid-3 reveal-stagger">
+            <div class="skill-card card">
+              <div class="skill-icon">⚛️</div>
+              <h4>React</h4>
+              <p>Component-based UI development</p>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-card card">
+              <div class="skill-icon">🟢</div>
+              <h4>Node.js</h4>
+              <p>Server-side JavaScript, REST APIs</p>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="78%"></div>
+              </div>
+            </div>
+            <div class="skill-card card">
+              <div class="skill-icon">🌐</div>
+              <h4>HTML</h4>
+              <p>Semantic markup, accessible layouts</p>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3>Soft Skills</h3>
+          <div class="grid-3 reveal-stagger">
+            <div class="skill-card card">
+              <div class="skill-icon">👑</div>
+              <h4>Leadership</h4>
+              <p>Team management, project coordination, strategic thinking</p>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="88%"></div>
+              </div>
+            </div>
+            <div class="skill-card card">
+              <div class="skill-icon">🤝</div>
+              <h4>Team Collaboration</h4>
+              <p>Cross-functional teamwork, agile workflows</p>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-card card">
+              <div class="skill-icon">💡</div>
+              <h4>Problem Solving</h4>
+              <p>Analytical thinking, creative solutions</p>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar" data-width="82%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE PAGE ==================== -->
+    <section id="experience" class="page">
+      <div class="section">
+        <div class="section-header">
+          <span class="section-label">// Experience</span>
+          <h2 class="section-title">Internships & Projects</h2>
+          <p class="section-subtitle">My professional journey and engineering projects</p>
+        </div>
+
+        <!-- Internships -->
+        <h3 style="font-size:1.4rem; margin-bottom:30px; color:#fff; display:flex; align-items:center; gap:10px;" class="reveal">
+          <span style="color:var(--primary);">01.</span> Internships
+        </h3>
+        <div class="timeline mb-40 reveal">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2025 - Present</div>
+              <h3>Junior Executive</h3>
+              <h4>Nuke Lab - Robotics R&D Company</h4>
+              <p>
+                Working as a Junior Executive in a robotics research and development company. Involved in prototyping, testing, and developing robotic systems. Gained hands-on experience with embedded systems, sensor integration, and automation workflows.
+              </p>
+              <ul>
+                <li>Assisted in developing autonomous robotic prototypes</li>
+                <li>Worked with sensor arrays and microcontroller programming</li>
+                <li>Collaborated with R&D team on automation solutions</li>
+                <li>Documented technical specifications and test results</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2024 - 2025</div>
+              <h3>Full Stack Developer Intern</h3>
+              <h4>Codalpha</h4>
+              <p>
+                Completed a full stack development internship gaining expertise in both frontend and backend technologies. Built and deployed web applications using modern frameworks and best practices.
+              </p>
+              <ul>
+                <li>Developed responsive web applications using React and Node.js</li>
+                <li>Designed and implemented RESTful APIs and database schemas</li>
+                <li>Participated in code reviews and agile development cycles</li>
+                <li>Optimized application performance and user experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <h3 style="font-size:1.4rem; margin-bottom:30px; color:#fff; display:flex; align-items:center; gap:10px;" class="reveal">
+          <span style="color:var(--primary);">02.</span> Projects at Yantrixa.in
+        </h3>
+        <div class="grid-2 reveal-stagger">
+          <div class="project-card card">
+            <div class="project-banner">💻</div>
+            <div class="project-body">
+              <h3>CodCraft.in</h3>
+              <p>A coding platform developed under Yantrixa.in for practicing coding challenges, improving problem-solving skills, and building a community of developers.</p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="https://codcraft.in" target="_blank" rel="noopener noreferrer">Live Site →</a>
+                <a href="https://github.com/balasankar8943-ux" target="_blank" rel="noopener noreferrer">GitHub →</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card card">
+            <div class="project-banner">🔍</div>
+            <div class="project-body">
+              <h3>VeyuSearch.com</h3>
+              <p>A powerful search aggregator for photos that pulls results from multiple sources, providing a unified and streamlined image search experience.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>APIs</span>
+              </div>
+              <div class="project-links">
+                <a href="https://veyusearch.com" target="_blank" rel="noopener noreferrer">Live Site →</a>
+                <a href="https://github.com/balasankar8943-ux" target="_blank" rel="noopener noreferrer">GitHub →</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card card">
+            <div class="project-banner">🌐</div>
+            <div class="project-body">
+              <h3>Yantrixa.in Platform</h3>
+              <p>The official Yantrixa platform - a technology initiative providing innovative solutions and team collaboration tools.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://yantrixa.in" target="_blank" rel="noopener noreferrer">Live Site →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements -->
+        <h3 style="font-size:1.4rem; margin-bottom:30px; color:#fff; display:flex; align-items:center; gap:10px; margin-top:50px;" class="reveal">
+          <span style="color:var(--primary);">03.</span> Achievements
+        </h3>
+        <div class="grid-2 reveal-stagger">
+          <div class="card" style="border-left: 3px solid #00ff88;">
+            <div class="card-icon" style="background:rgba(0,255,136,0.1); color:#00ff88;">🏆</div>
+            <h3>YIP 8.0 District Level Winner</h3>
+            <p>Won at the district level in Young Innovators Programme 8.0 (K-DISC) with teammate Abhiram G, representing Sree Buddha College of Engineering. Promoted to state level with <strong style="color:var(--accent);">Rs 25,000 cash prize</strong>. Theme: Agriculture & Plant Sciences.</p>
+          </div>
+          <div class="card" style="border-left: 3px solid #7b2ff7;">
+            <div class="card-icon" style="background:rgba(123,47,247,0.1); color:#7b2ff7;">🎯</div>
+            <h3>Hult Prize State Finalist</h3>
+            <p>Selected as a <strong style="color:var(--secondary);">State Finalist</strong> in the Hult Prize, the world's largest student competition for social enterprise. Competed at the state level through the Yathra event.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certificates" class="page">
+      <div class="section">
+        <div class="section-header">
+          <span class="section-label">// Certificates</span>
+          <h2 class="section-title">Certifications & Achievements</h2>
+          <p class="section-subtitle">Click on any certificate to view the full image</p>
+        </div>
+
+        <div class="cert-grid reveal-stagger">
+          <div class="cert-card" data-cert-img="assets/cert-yip.jpeg">
+            <div class="cert-preview">
+              🏆
+              <span class="view-hint">Click to view</span>
+            </div>
+            <div class="cert-info">
+              <h3>YIP 8.0 District Winner Certificate</h3>
+              <p>K-DISC Certificate of Appreciation - Agriculture & Plant Sciences</p>
+              <div class="cert-issuer">K-DISC Kerala | March 2026</div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-cert-img="assets/cert-yip-poster.jpeg">
+            <div class="cert-preview">
+              🎉
+              <span class="view-hint">Click to view</span>
+            </div>
+            <div class="cert-info">
+              <h3>YIP 8.0 District Level Winners</h3>
+              <p>Sree Buddha College of Engineering - Promoted to State Level with Rs 25,000 Prize</p>
+              <div class="cert-issuer">SBCE Pattoor, Nooranad</div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-cert-img="assets/cert-hult-ceremony.jpeg">
+            <div class="cert-preview">
+              🎓
+              <span class="view-hint">Click to view</span>
+            </div>
+            <div class="cert-info">
+              <h3>Hult Prize State Finalist</h3>
+              <p>Participation Certificate Received at Award Ceremony - Yathra Event</p>
+              <div class="cert-issuer">Hult Prize | State Level</div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-cert-img="assets/cert-codalpha-offer.jpeg">
+            <div class="cert-preview">
+              💼
+              <span class="view-hint">Click to view</span>
+            </div>
+            <div class="cert-info">
+              <h3>CodeAlpha Internship Offer</h3>
+              <p>Full Stack Development Intern - May to June 2026</p>
+              <div class="cert-issuer">CodeAlpha | Student ID: CA/DF1/83568</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT PAGE ==================== -->
+    <section id="contact" class="page">
+      <div class="section">
+        <div class="section-header">
+          <span class="section-label">// Contact</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">Have a project in mind? Let's build something great together.</p>
+        </div>
+
+        <div class="contact-layout">
+          <form id="contact-form" class="contact-form reveal" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="2376c525-c1d6-4a1f-a62b-0dbf8d4e54f7">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              Send Message
+            </button>
+          </form>
+
+          <div class="contact-info-cards reveal">
+            <div class="contact-info-card">
+              <div class="cicon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <p>balasankar8943@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="cicon">📱</div>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 8075 94673</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="cicon">💼</div>
+              <div>
+                <h4>LinkedIn</h4>
+                <p><a href="https://www.linkedin.com/in/balasankar-s-5759b6367" target="_blank" rel="noopener noreferrer">linkedin.com/in/balasankar-s</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="cicon">🐙</div>
+              <div>
+                <h4>GitHub</h4>
+                <p><a href="https://github.com/balasankar8943-ux" target="_blank" rel="noopener noreferrer">github.com/balasankar8943-ux</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="cicon">🌐</div>
+              <div>
+                <h4>Website</h4>
+                <p><a href="https://yantrixa.in" target="_blank" rel="noopener noreferrer">yantrixa.in</a></p>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <a href="https://www.linkedin.com/in/balasankar-s-5759b6367" target="_blank" rel="noopener noreferrer" title="LinkedIn">💼</a>
+              <a href="https://github.com/balasankar8943-ux" target="_blank" rel="noopener noreferrer" title="GitHub">🐙</a>
+              <a href="mailto:balasankar8943@gmail.com" title="Email">📧</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Certificate Modal -->
+  <div id="cert-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <img id="cert-modal-img" src="" alt="Certificate">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Balasankar S. Built with passion and engineering precision. | <a href="https://yantrixa.in" target="_blank" rel="noopener noreferrer">Yantrixa.in</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/three-bg.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
